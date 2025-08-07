@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-mono{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+/* designing responsive nav bar */
+#logo{
+    margin: 20px 20px 20px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: #537d5d;
+    z-index: 999;
+}
+#menu{
+    display: none;
+    height: 100%;
+    width: 50px;
+    margin-right: 5px;
+}
+#menu:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+header>img{
+    margin-right:10px;
+    transition: all 0.5s ease 0s;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li>a{
+color: white;
+text-decoration: none;
+font-size: 1.2rem;
+transition: all 0.5s ease 0s;
+}
+nav ul li>a:hover{
+    color: #d2d0a0;
+}
+/* desigining the create blog post button */
+button{
+    background-color: #537d5d;
+    height: 50px;
+    width: 50px;
+    border:none;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+button>img{
+    margin-top: 10px;
+}
+
+@media (max-width:400px){
+    #menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+    }
+    .menu{
+        display: none;
+    }
+} 
